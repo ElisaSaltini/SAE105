@@ -1,0 +1,208 @@
+/************************************
+ * PAGE D’ACCUEIL — HOME
+ ***********************************/
+
+/* Police globale */
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+
+/* ================================
+   SECTION HERO
+================================ */
+
+.hero {
+    background: var(--vert-500);
+    color: var(--beige100);
+
+    /* IMPORTANT pour recréer l’espace Figma */
+    padding-top: 40px;
+    padding-bottom: 140px;
+    /* grand espace vert foncé en dessous */
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    position: relative;
+    text-align: left;
+}
+
+/* Logo Echo Sonore (grand) */
+.hero__logo img {
+    width: 85%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Sous-titre */
+.hero__subtitle {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+/* BLOC DATES */
+.hero__dates {
+    background: var(--vert300);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 280px;
+    margin: 50px auto;
+
+    padding: 25px 20px;
+    text-align: center;
+}
+
+/* Dates principales */
+.hero__bigdate {
+    font-family: var(--titre);
+    font-size: 40px;
+    line-height: 1.2;
+    color: var(--beige100);
+    margin-bottom: 8px;
+    margin-top: 5px;
+}
+
+/* Site plein air */
+.hero__place {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--vert-500);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+/* Titre */
+.hero__introtitle {
+    font-family: var(--titre);
+    font-size: 40px;
+    line-height: 45px;
+    margin: 40px 0 20px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+
+/* Texte descriptif */
+.hero__intro {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.3;
+    width: 85%;
+    margin-left: 0;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+
+/* ================================
+   IMAGE SCÈNE
+================================ */
+
+.scene img {
+    width: 100%;
+    display: block;
+}
+
+
+/* ================================
+   SECTIONS GÉNÉRALES
+================================ */
+
+.section {
+    background: var(--beige100);
+    padding: 40px 25px;
+    text-align: left;
+}
+
+/* Titres */
+.section__title {
+    font-family: var(--titre);
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 10px;
+    color: var(--vert-500);
+}
+
+/* Sous-texte */
+.section__desc {
+    font-size: 13px;
+    line-height: 1.2;
+    color: var(--noir400);
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/* Illustrations */
+.section__illustration img {
+    width: 65px;
+    margin-bottom: 30px;
+}
+
+/* Séparateurs entre sections (sauf la première) */
+.section+.section {
+    border-top: 3px solid var(--vert-500);
+}
+
+
+/* ================================
+   PARTENAIRES + CARROUSEL
+================================ */
+
+.partners {
+    background: var(--vert300);
+    padding: 50px 25px;
+}
+
+.partners .section__title {
+    color: var(--vert-500);
+}
+
+/* Carousel wrapper */
+.partners-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+/* Boutons flèches */
+.carousel__btn {
+    background: var(--vert-500);
+    color: var(--vert300);
+    border: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image du partenaire */
+.carousel__image img {
+    width: 120px;
+    height: 120px;
+    background: var(--beige100);
+    border-radius: 50%;
+    object-fit: contain;
+    padding: 12px;
+}
+
+
+/* ================================
+   BOUTONS (génériques)
+================================ */
+
+.btn--light,
+.btn--dark {
+    font-size: 12px;
+    padding: 12px 18px;
+    border-radius: 25px;
+}
