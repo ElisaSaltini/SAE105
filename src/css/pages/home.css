@@ -16,10 +16,9 @@ body {
     background: var(--vert-500);
     color: var(--beige100);
 
-    /* IMPORTANT pour recréer l’espace Figma */
+    /* Espace Figma recréé */
     padding-top: 40px;
     padding-bottom: 140px;
-    /* grand espace vert foncé en dessous */
 
     padding-left: 30px;
     padding-right: 30px;
@@ -75,7 +74,6 @@ body {
     letter-spacing: 0.5px;
 }
 
-
 /* Titre */
 .hero__introtitle {
     font-family: var(--titre);
@@ -85,7 +83,6 @@ body {
     letter-spacing: 1px;
     text-align: left;
 }
-
 
 /* Texte descriptif */
 .hero__intro {
@@ -143,7 +140,7 @@ body {
     margin-bottom: 30px;
 }
 
-/* Séparateurs entre sections (sauf la première) */
+/* Séparateurs entre sections */
 .section+.section {
     border-top: 3px solid var(--vert-500);
 }
@@ -197,12 +194,21 @@ body {
 
 
 /* ================================
-   BOUTONS (génériques)
+   BOUTONS (UTILISENT bouton.css)
 ================================ */
 
-.btn--light,
-.btn--dark {
-    font-size: 12px;
-    padding: 12px 18px;
-    border-radius: 25px;
+/* 
+   On supprime l’ancienne règle qui cassait le style :
+   .btn--light,
+   .btn--dark { padding ... }
+   →
+
+   Maintenant les boutons sont 100% gérés par bouton.css
+*/
+
+.hero .btn,
+.section .btn,
+.partners .btn {
+    margin-top: 10px;
+    display: inline-flex;
 }
