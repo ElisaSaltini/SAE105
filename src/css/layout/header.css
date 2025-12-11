@@ -1,0 +1,51 @@
+/* HEADER */
+.header {
+    background: var(--vert-500);
+    height: 137px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 40px;
+    /* ➜ Déplace TOUT vers le bas comme sur Figma */
+}
+
+/* LOGO */
+.header__logo {
+    font-family: var(--titre);
+    font-size: 40px;
+    color: var(--beige100);
+    text-decoration: none;
+}
+
+/* BOUTON BURGER */
+.header__menu-btn {
+    width: 50px;
+    height: 40px;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+
+    position: absolute;
+    right: 20px;
+    top: calc(50% + 20px);
+    /* ➜ Aligne le burger EXACTEMENT avec le logo */
+    transform: translateY(-50%);
+}
+
+/* BARRES DU BURGER */
+.header__menu-btn span {
+    display: block;
+    height: 2px;
+    background: var(--beige100);
+    width: 30px;
+    margin-left: auto;
+}
+
+.header__menu-btn span:nth-child(2) {
+    width: 20px;
+}

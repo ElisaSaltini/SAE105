@@ -13,24 +13,17 @@
 
     <!-- HEADER -->
     <header class="header">
-        <a class="header__logo" href="/">Echo Sonore</a>
     
-        <button class="header__menu-btn" aria-label="Ouvrir le menu" aria-controls="mainNav" aria-expanded="false">
+        <!-- LOGO -->
+        <a class="header__logo" href="/">ECHO SONORE</a>
+    
+        <!-- BOUTON BURGER (ouvre la page menu) -->
+        <button class="header__menu-btn" onclick="window.location.href='/menu.html'">
             <span></span><span></span><span></span>
         </button>
     
-        <nav class="header__nav" id="mainNav" hidden>
-            <ul class="header__list u-list-unstyled">
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/apropos.html">À propos</a></li>
-                <li><a href="/programme.html">Programme</a></li>
-                <li><a href="/artistes.html">Artistes</a></li>
-                <li><a href="/scene.html">Scènes</a></li>
-                <li><a href="/infospratiques.html">Infos pratiques</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
+
 
 
     <main>
@@ -133,24 +126,28 @@
         </section>
 
         <!-- SECTION PARTENAIRES -->
-        <section class="partners" id="partners">
-            <header class="section__header">
-                <h2 class="section__title">Nos partenaires</h2>
-            </header>
-
-            <div class="partners__carousel">
-                <button class="carousel__button --prev" aria-label="Précédent"></button>
-
-                <div class="partners__logo">
-                    <img src="/assets/svg/spotifySVG.svg" alt="Spotify partenaire du festival">
-                    <img src="/assets/svg/chamastacosSVG.svg" alt="Chamas Tacos partenaire du festival">
-                    <img src="/assets/svg/heinekenSVG.svg" alt="Heineken partenaire du festival">
-                    <img src="/assets/svg/starbucksSVG.svg" alt="Starbucks partenaire du festival">
-                </div>
-
-                <button class="carousel__button --next" aria-label="Suivant"></button>
-            </div>
+    <section class="partners" id="partners">
+    
+        <header class="section__header">
+            <h2 class="section__title">Nos partenaires</h2>
+        </header>
+    
+        <section class="partners-carousel">
+    
+            <button class="carousel__btn carousel__btn--prev">←</button>
+    
+            <figure class="carousel__image">
+                <img src="/assets/svg/spotifySVG.svg" data-images="/assets/svg/spotifySVG.svg,
+                                 /assets/svg/chamastacosSVG.svg,
+                                 /assets/svg/heinekenSVG.svg,
+                                 /assets/svg/starbucksSVG.svg" alt="Logos des partenaires">
+            </figure>
+    
+            <button class="carousel__btn carousel__btn--next">→</button>
+    
         </section>
+    </section>
+
 
     </main>
 
@@ -187,6 +184,8 @@
 
     <!-- JS -->
     <script src="/src/js/menu.js"></script>
+    <script src="/src/js/menu.js"></script>
+    <script src="/src/js/partners-carousel.js"></script>
 
 </body>
 
