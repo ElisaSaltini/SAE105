@@ -35,9 +35,9 @@
 .menu-header__close {
     position: absolute;
     right: 25px;
-    top: 68px;
+    top: 55px;
     width: 24px;
-    height: 24px;
+    height: 30px;
 
     background: none;
     border: none;
@@ -124,9 +124,12 @@
 
 .menu-socials img {
     width: 40px;
-    height: 40px;
-    filter: invert(96%) brightness(150%);
-    /* Rend les icônes couleur beige comme Figma */
+
+    /* Rend l’icône blanche */
+    filter: brightness(0) invert(1);
+    /* Ajuste pour approcher var(--beige100) */
+    opacity: 0.92;
+    /* Rend les icônes couleur beige comme Figma mais sans la variable car je n'y arrive pas */
 }
 
 
@@ -136,7 +139,7 @@
 
 .menu-footer {
     margin-top: 40px;
-    padding: 0 40px;
+    padding: 0 0px;
     color: var(--beige100);
     font-size: 13px;
     line-height: 27px;
