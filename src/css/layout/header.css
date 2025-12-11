@@ -1,13 +1,22 @@
 /* HEADER */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .header {
     background: var(--vert-500);
-    height: 137px;
+    height: 132px;
+    /* ✔ Hauteur Figma réelle */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    /* ✔ Place le logo plus bas sans padding */
     position: relative;
-    padding-top: 40px;
-    /* ➜ Déplace TOUT vers le bas comme sur Figma */
+    padding-bottom: 20px;
+    /* ✔ Ajustement parfait du placement */
 }
 
 /* LOGO */
@@ -32,12 +41,11 @@
 
     position: absolute;
     right: 20px;
-    top: calc(50% + 20px);
-    /* ➜ Aligne le burger EXACTEMENT avec le logo */
-    transform: translateY(-50%);
+    bottom: 30px;
+    /* ✔ Aligné exactement au niveau du logo */
 }
 
-/* BARRES DU BURGER */
+/* LIGNES DU BURGER */
 .header__menu-btn span {
     display: block;
     height: 2px;
