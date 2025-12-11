@@ -2,6 +2,24 @@
  * PAGE À PROPOS — APROPOS.CSS
  ***********************************/
 
+/* Applique Helvetica partout dans la page // FIX */
+#apropos,
+#apropos *,
+#chronologie,
+#chronologie * {
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+    /* Enlève soulignement du bouton // FIX */
+}
+
+/* ================================
+   SUPPRESSION DU TRAIT ENTRE SECTIONS // FIX
+================================ */
+
+.section+.section {
+    border-top: none !important;
+}
+
 /* ================================
    CONTENEUR GLOBAL
 ================================ */
@@ -30,12 +48,15 @@
     max-width: 260px;
 }
 
-/* Illustration */
+/* Illustration — SUPPRESSION DES MARGES // FIX */
 #apropos .section__illustration img {
     width: 100%;
     height: 240px;
     object-fit: cover;
-    margin-top: 25px;
+    margin: 0;
+    /* FIX */
+    padding: 0;
+    /* FIX */
     display: block;
 }
 
@@ -66,7 +87,6 @@
     color: var(--beige100);
     margin-bottom: 30px;
 }
-
 
 /* ================================
    CARDS DE LA CHRONOLOGIE
@@ -105,30 +125,32 @@
     color: var(--vert-500);
 }
 
-
 /* ================================
    BOUTON "VOIR LES ARTISTES"
+   (NE MODIFIE PAS LE STYLE DU BOUTON)
 ================================ */
 
 #chronologie .btn {
     margin: 40px auto;
+    display: inline-flex;
 }
 
-
 /* ================================
-   SECONDE IMAGE
+   SECONDE IMAGE — SUPPRESSION MARGES // FIX
 ================================ */
 
 #chronologie .section__illustration img {
     width: 100%;
     height: 240px;
     object-fit: cover;
-    margin-top: 30px;
+    margin: 0;
+    /* FIX */
+    padding: 0;
+    /* FIX */
 }
 
-
 /****************************************
-   AJUSTEMENTS GÉNÉRAUX / COHÉRENCE VISUELLE
+   AJUSTEMENTS GÉNÉRAUX
 *****************************************/
 
 .section__header {
