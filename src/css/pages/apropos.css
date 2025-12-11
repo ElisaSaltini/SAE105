@@ -1,33 +1,39 @@
 /************************************
- * PAGE À PROPOS — APROPOS.CSS
+ * PAGE À PROPOS — VERSION FINALE FIDÈLE FIGMA
  ***********************************/
 
-/* Applique Helvetica partout dans la page // FIX */
+
+/* ================================
+   RESET SPÉCIFIQUE PAGE
+================================ */
+
 #apropos,
 #apropos *,
 #chronologie,
 #chronologie * {
     font-family: Helvetica, sans-serif;
     text-decoration: none;
-    /* Enlève soulignement du bouton // FIX */
+    box-sizing: border-box;
 }
 
+
 /* ================================
-   SUPPRESSION DU TRAIT ENTRE SECTIONS // FIX
+   SUPPRESSION DU TRAIT ENTRE SECTIONS (FIGMA n'en a PAS)
 ================================ */
 
 .section+.section {
     border-top: none !important;
 }
 
+
+
 /* ================================
-   CONTENEUR GLOBAL
+   SECTION “À PROPOS”
 ================================ */
 
 #apropos {
     background: var(--beige100);
-    padding: 40px 30px 60px;
-    text-align: left;
+    padding: 40px 30px 50px;
 }
 
 /* Titre */
@@ -37,45 +43,44 @@
     line-height: 45px;
     color: var(--vert-500);
     margin-bottom: 10px;
+    letter-spacing: 0.3px;
 }
 
 /* Description */
 #apropos .section__desc {
     font-size: 13px;
     font-weight: 700;
-    color: var(--vert-500);
-    line-height: 1.2;
+    line-height: 16px;
     max-width: 260px;
+    color: var(--vert-500);
 }
 
-/* Illustration — SUPPRESSION DES MARGES // FIX */
+/* IMAGE PRINCIPALE — EXACTEMENT COMME FIGMA */
 #apropos .section__illustration img {
     width: 100%;
     height: 240px;
     object-fit: cover;
-    margin: 0;
-    /* FIX */
+    margin: 20px 0 0 0;
+    /* léger espace comme sur la maquette */
     padding: 0;
-    /* FIX */
     display: block;
 }
 
 
+
 /* ================================
-   SECTION CHRONOLOGIE
+   SECTION “CHRONOLOGIE”
 ================================ */
 
 #chronologie {
     background: var(--vert300);
     padding: 40px 30px 60px;
-    text-align: left;
 }
 
 /* Titre */
 #chronologie .section__title {
     font-family: var(--titre);
     font-size: 36px;
-    line-height: 45px;
     color: var(--beige100);
     margin-bottom: 10px;
 }
@@ -85,11 +90,13 @@
     font-size: 13px;
     font-weight: 700;
     color: var(--beige100);
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
+
+
 /* ================================
-   CARDS DE LA CHRONOLOGIE
+   CARDS — EXACT FIGMA
 ================================ */
 
 .chrono {
@@ -102,10 +109,13 @@
 .chrono-card {
     background: var(--beige100);
     border-radius: 25px;
-    padding: 25px 22px;
     width: 100%;
     max-width: 320px;
     margin: 0 auto;
+    padding: 25px 22px;
+
+    /* Ombre très subtile comme Figma */
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.05);
 }
 
 /* Année */
@@ -114,44 +124,48 @@
     font-size: 36px;
     line-height: 45px;
     color: var(--vert-500);
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 /* Texte */
 .chrono-card__desc {
     font-size: 13px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.25;
     color: var(--vert-500);
 }
 
+
+
 /* ================================
    BOUTON "VOIR LES ARTISTES"
-   (NE MODIFIE PAS LE STYLE DU BOUTON)
+   — Style 100% géré par bouton.css
 ================================ */
 
 #chronologie .btn {
-    margin: 40px auto;
+    margin: 40px auto 30px;
     display: inline-flex;
 }
 
+
+
 /* ================================
-   SECONDE IMAGE — SUPPRESSION MARGES // FIX
+   DERNIÈRE IMAGE
 ================================ */
 
 #chronologie .section__illustration img {
     width: 100%;
     height: 240px;
     object-fit: cover;
-    margin: 0;
-    /* FIX */
+    margin: 30px 0 0 0;
     padding: 0;
-    /* FIX */
 }
 
-/****************************************
-   AJUSTEMENTS GÉNÉRAUX
-*****************************************/
+
+
+/* ================================
+   ESPACEMENTS GÉNÉRAUX
+================================ */
 
 .section__header {
     margin-bottom: 20px;
